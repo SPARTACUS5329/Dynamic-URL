@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var openPageButton = document.getElementById("open-page");
   var urlInput = document.getElementById("url-text");
+  urlInput.focus();
   openPageButton.addEventListener("click", function () {
     let url = urlInput.value;
     if (url[0] === "r") {
